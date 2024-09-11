@@ -12,7 +12,7 @@ namespace DAQO20240910Login.Controllers
     public class AccountController : ControllerBase
     {
         // GET: api/<AccountController>
-        [HttpGet("login")]
+        [HttpPost("login")]
         public IActionResult Login(string login, string password)
         {
             if (login == "admin" && password == "12345")
